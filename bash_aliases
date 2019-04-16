@@ -14,3 +14,6 @@ xopen() {
 export FZF_DEFAULT_COMMAND="find $HOME -type f 2>/dev/null"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="find $HOME -type d 2>/dev/null"
+
+tmux
+redshift -O 3500
