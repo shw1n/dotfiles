@@ -1,0 +1,11 @@
+# Things to Install
+- tmux
+- custom snap vim bindings
+- fzf
+- ida
+- hxd (in wine)
+- evernote (in wine, specific version)
+- cryptomator
+- grive / rsync to sync cryptomator
+- beyond compare
+- keepass
