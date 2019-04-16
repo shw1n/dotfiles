@@ -1,7 +1,7 @@
 alias ksync="$HOME/Documents/scripts/sync_keepass.sh"
 alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote/Evernote.exe &"
 
-hxd() { wine /home/bigtoe-d/.wine/drive_c/'Program Files'/HxD/HxD.exe z:\\"$1" &}
+hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe z:\\"$1" &}
 
 xfind() { 
     nautilus "$1"
