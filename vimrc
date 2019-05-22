@@ -5,4 +5,7 @@ set expandtab
 
 set autochdir
 
+set laststatus=2
+set statusline=%F
+
 hi Comment ctermfg=LightBlue
