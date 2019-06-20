@@ -1,6 +1,6 @@
 # Things to Install
 - tmux
-- custom snap vim bindings
+- custom snap vim bindings (ubuntu) (have custom program written for windows)
 - fzf
 - ida
 - hxd (in wine)
@@ -9,3 +9,4 @@
 - grive / rsync to sync cryptomator
 - beyond compare
 - keepass
+- ag
