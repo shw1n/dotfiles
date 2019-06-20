@@ -11,4 +11,6 @@ set statusline=%F
 
 hi Comment ctermfg=LightBlue
 
+"Enables filetype detection and auto-indentation handling"
+"custom filetype plugins in ~/.vim/ftplugin"
 filetype plugin indent on
