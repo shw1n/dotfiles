@@ -7,7 +7,7 @@ set autochdir
 
 
 set laststatus=2
-set statusline=%F
+set statusline=%F,%c-%l/%L
 
 hi Comment ctermfg=LightBlue
 

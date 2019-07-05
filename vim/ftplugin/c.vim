@@ -2,4 +2,5 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-set nonumber
+" Remove trailing whitespace on save"
+autocmd BufWritePre * :%s/\s\+$//e
