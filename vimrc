@@ -9,6 +9,8 @@ set autochdir
 set laststatus=2
 set statusline=%F,%c-%l/%L
 
+set tags=tags;/
+
 hi Comment ctermfg=LightBlue
 
 "Enables filetype detection and auto-indentation handling"
