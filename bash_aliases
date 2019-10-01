@@ -1,7 +1,7 @@
 alias ksync="$HOME/Documents/scripts/sync_keepass.sh"
 alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote/Evernote.exe &"
 
-alias pbcopy='xclip -selection clipboard'
+alias pbcopy='xargs echo -n | xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe z:"$1" &}
