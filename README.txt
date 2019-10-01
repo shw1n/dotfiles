@@ -10,3 +10,4 @@
 - beyond compare
 - keepass
 - ag
+- Vimium (for Firefox)
