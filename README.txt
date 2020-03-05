@@ -1,5 +1,4 @@
 #  Necessities
-git clone git@github.com:shw1n/dotfiles.git
 - tmux
 - custom snap vim bindings (ubuntu) (have custom program written for windows)
 - fzf
@@ -9,9 +8,17 @@ git clone git@github.com:shw1n/dotfiles.git
 - Vimium (for Firefox)
 - custom dotfiles for tmux, fzf, vim
 
+To install necessities:
+```
+git clone git@github.com:shw1n/dotfiles.git
+python aliases.py
+./get_core.sh
+```
+
 # Nice extras
 - ida
 - hxd (in wine)
 - cryptomator
 - grive / rsync to sync cryptomator
 - beyond compare
+- zeal

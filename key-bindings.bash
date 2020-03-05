@@ -1,4 +1,5 @@
 # Key bindings for fzf (should be in $FZF_HOME/shell/key-bindings.bash)
+# export FZF_CTRL_G_COMMAND=find . -type f 2>/dev/null    (or whatever cmd you want)
 # ------------
 
 # My addition

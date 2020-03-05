@@ -1,0 +1,3 @@
+*
+google_drive_sync/*
+!google_drive_sync/kp-db-final.kdbx
