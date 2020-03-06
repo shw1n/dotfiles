@@ -45,4 +45,3 @@ prompt "Install tmux and ag?" install_tmux_ag
 prompt "Install keepassxc?" install_keepass
 prompt "Install fzf?" install_fzf
 prompt "Install evernote?" install_evernote
-prompt "Install grive and .griveignore?" install_grive

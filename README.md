@@ -15,10 +15,12 @@ python aliases.py
 ./get_core.sh
 ```
 
+Note: grive was disabled due to Google's new API security update.
+Instead just use overGrive
+
 # Nice extras
 - ida
 - hxd (in wine)
 - cryptomator
-- grive / rsync to sync cryptomator
 - beyond compare
 - zeal
