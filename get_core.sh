@@ -40,8 +40,14 @@ install_evernote() {
     wine /tmp/evernote.exe
 }
 
+change_sudo_timeout() {
+    sudo update-alternatives --set editor `which vim.basic`
+    echo "Defaults:$USER timestamp_timeout=30" | sudo EDITOR='tee -a' visudo
+}
+
 # Main
 prompt "Install tmux and ag?" install_tmux_ag
 prompt "Install keepassxc?" install_keepass
 prompt "Install fzf?" install_fzf
 prompt "Install evernote?" install_evernote
+prompt "Set sudo timeout to 30 min?" change_sudo_timeout
