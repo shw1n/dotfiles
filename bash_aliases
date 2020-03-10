@@ -4,7 +4,7 @@ alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote
 alias pbcopy='xargs echo -n | xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe z:"$1" &}
+hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe "$1" &}
 
 xfind() { 
     nautilus "$1"
@@ -16,6 +16,10 @@ xopen() {
 
 xr() {
     ag --nobreak --nonumbers --noheading . "$1" | fzf --delimiter=: --nth=2..
+}
+
+stocks() {
+    $HOME/tools/ticker.sh SH BTC-USD ETH-USD AMZN FB SCHW ETSY AMD NVDA
 }
 
 export FZF_DEFAULT_COMMAND="find $HOME /dram -type f 2>/dev/null"
