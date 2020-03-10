@@ -16,3 +16,15 @@ hi Comment ctermfg=LightBlue
 "Enables filetype detection and auto-indentation handling"
 "custom filetype plugins in ~/.vim/ftplugin"
 filetype plugin indent on
+
+"Changing tab completion on vim"
+set wildmode=longest,list,full
+set wildmenu
+
+"Setting incremental search and search highlighting"
+set incsearch
+set hlsearch
+
+"Folding"
+set foldmethod=indent
+set nofoldenable
