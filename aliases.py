@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python2
+
 """
 Set up aliases for dotfiles and folders.
 """

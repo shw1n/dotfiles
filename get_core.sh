@@ -45,9 +45,14 @@ change_sudo_timeout() {
     echo "Defaults:$USER timestamp_timeout=30" | sudo EDITOR='tee -a' visudo
 }
 
+install_fzf_vim() {
+    ln -s ~/.fzf/plugin/fzf.vim ~/.vim/plugin/fzf.vim
+}
+
 # Main
 prompt "Install tmux and ag?" install_tmux_ag
 prompt "Install keepassxc?" install_keepass
 prompt "Install fzf?" install_fzf
 prompt "Install evernote?" install_evernote
 prompt "Set sudo timeout to 30 min?" change_sudo_timeout
+prompt "Install fzf-vim plugin?" install_fzf_vim
