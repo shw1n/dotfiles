@@ -34,3 +34,4 @@ set wildmenu
 "Setting incremental search and search highlighting"
 set incsearch
 set hlsearch
+hi Search cterm=NONE ctermfg=black ctermbg=blue
