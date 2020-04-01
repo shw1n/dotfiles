@@ -4,6 +4,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"Ignore case during vim search, '\C' to make sensitive
+"on stock vim use '\c' to make case ins
+set ignorecase
+
 set autochdir
 
 

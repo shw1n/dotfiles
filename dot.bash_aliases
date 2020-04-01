@@ -4,6 +4,8 @@ alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote
 alias pbcopy='xargs echo -n | xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
+alias ipython='ipython3'
+
 hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe "$1" &}
 
 xfind() { 
