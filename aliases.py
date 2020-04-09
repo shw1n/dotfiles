@@ -30,13 +30,13 @@ for srcfile in os.listdir(base):
                     # skip - don't overwrite
                     break
 
-        try:
-            if overwrite:
-                backup = "{}.orig".format(dest)
-                shutil.move(dest, backup)
-                print("\tBacked up {} to {}".format(dest, backup))
-            os.symlink(src, dest)
-        except OSError:
-            print("[-] WARNING: File already exists, skipping: {}".format(dest))
+            try:
+                if overwrite:
+                    backup = "{}.orig".format(dest)
+                    shutil.move(dest, backup)
+                    print("\tBacked up {} to {}".format(dest, backup))
+                os.symlink(src, dest)
+            except OSError:
+                print("[-] WARNING: File already exists, skipping: {}".format(dest))
 
 
