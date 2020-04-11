@@ -6,6 +6,11 @@ alias pbpaste='xclip -selection clipboard -o'
 
 alias ipython='ipython3'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe "$1" &}
 
 xfind() { 
