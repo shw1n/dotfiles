@@ -1,3 +1,4 @@
 .netrwhist
 bundle/*
 plugin/fzf.vim
+undo/*

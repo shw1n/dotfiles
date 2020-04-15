@@ -49,7 +49,7 @@ set autochdir
 
 " Set peristent undo
 set undofile
-set undodir=.
+set undodir=$HOME/.vim/undo
 set undolevels=1000
 
 set laststatus=2
