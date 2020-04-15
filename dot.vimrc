@@ -47,6 +47,10 @@ set ignorecase
 
 set autochdir
 
+" Set peristent undo
+set undofile
+set undodir=.
+set undolevels=1000
 
 set laststatus=2
 
