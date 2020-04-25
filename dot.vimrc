@@ -30,6 +30,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+" To install vundle on new system:
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"
+" Then open vim and run :PluginInstall
+"
 
 """" VUNDLE END
 
