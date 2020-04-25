@@ -6,8 +6,12 @@ alias pbpaste='powershell.exe Get-Clipboard'
 alias xopen="explorer.exe"
 
 export FZF_DEFAULT_COMMAND="find /mnt/d/ /mnt/c/Users/wmx/ -type f 2>/dev/null"
+# Was having difficulty w/ the below commands on WSL, until I edited .inputrc to
+# set editing-mode emacs (instead of set editing-mode vi), then it all started working
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="find /mnt/d/ /mnt/c/Users/wmx/ -type d 2>/dev/null"
 export FZF_CTRL_G_COMMAND="find . -type f 2>/dev/null"
 
 tmux
+
+cd /mnt/d/
