@@ -11,6 +11,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+alias lh='ls -lh'
+
 hxd() { wine $HOME/.wine/drive_c/'Program Files'/HxD/HxD.exe "$1" &}
 
 xfind() { 
