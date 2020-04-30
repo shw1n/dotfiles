@@ -36,5 +36,10 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_G_COMMAND="find . -type f 2>/dev/null"
 export FZF_ALT_C_COMMAND="find $HOME /dram -type d 2>/dev/null"
 
+if ! pgrep -x "xbindkeys" > /dev/null
+then
+    xbindkeys -f ~/.xbindkeysrc 
+fi
+
 tmux
 redshift -O 3500
