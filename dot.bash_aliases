@@ -1,3 +1,4 @@
+alias balias="vim ~/.bash_aliases"
 alias ksync="$HOME/Documents/scripts/sync_keepass.sh"
 alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote/Evernote.exe &"
 
@@ -44,3 +45,5 @@ fi
 
 tmux
 redshift -O 3500
+
+source ~/.bash_aliases.local
