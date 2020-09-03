@@ -38,6 +38,12 @@ export FZF_CTRL_G_COMMAND="find . -type f 2>/dev/null"
 export FZF_ALT_C_COMMAND="find $HOME /dram -type d 2>/dev/null"
 export FZF_ALT_G_COMMAND="find . -type d 2>/dev/null"
 
+# Run xmodmap for custom bindings if mapping exists
+if [ -f ~/.xmodmap ]; then
+    xmodmap ~/.xmodmap
+fi
+
+# Start xbindkeys if it isn't running already
 if ! pgrep -x "xbindkeys" > /dev/null
 then
     xbindkeys -f ~/.xbindkeysrc 
@@ -46,4 +52,7 @@ fi
 tmux
 redshift -O 3500
 
-source ~/.bash_aliases.local
+# Source local non-version-controlled aliases if they exist
+if [ -f ~/.bash_aliases.local ]; then
+    source ~/.bash_aliases.local
+fi
