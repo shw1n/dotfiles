@@ -1,4 +1,5 @@
 # For Windows Subsystem on Linux
+set bell-style none
 
 alias pbcopy="perl -pe 'chomp if eof' | clip.exe"
 alias pbpaste='powershell.exe Get-Clipboard'
