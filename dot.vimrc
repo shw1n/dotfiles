@@ -73,9 +73,10 @@ let generate_tags=1
 let g:ctags_title=1
 
 " Fix colors
-hi Comment guifg=LightBlue ctermfg=LightBlue
-hi Title guifg=LightBlue ctermfg=LightBlue
-hi Special guifg=LightBlue ctermfg=LightBlue
+"hi Comment guifg=LightBlue ctermfg=LightBlue
+"hi Title guifg=LightBlue ctermfg=LightBlue
+"hi Special guifg=LightBlue ctermfg=LightBlue
+colorscheme industry
 
 "Enables filetype detection and auto-indentation handling"
 "custom filetype plugins in ~/.vim/ftplugin"
