@@ -64,7 +64,10 @@ then
     xbindkeys -f ~/.xbindkeysrc 
 fi
 
-tmux
+if [[ -z "${TMUX}" ]]; then
+    tmux
+fi
+
 redshift -O 3500
 #redshift -O 5000
 
