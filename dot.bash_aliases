@@ -34,6 +34,7 @@ alias pbcopy='xargs echo -n | xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 alias ipython='ipython3'
+alias lock='gnome-screensaver-command --lock'
 
 alias ..='cd ..'
 alias ...='cd ../..'
