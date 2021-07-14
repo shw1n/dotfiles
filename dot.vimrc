@@ -12,8 +12,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 """
 "ONLY EDIT BELOW THIS LINE, ADD YOUR PLUGINS
-"Autocomplete
-Plugin 'davidhalter/jedi-vim'
+"
 "ONLY EDIT ABOVE THIS LINE, ADD YOUR PLUGINS
 
 " All of your Plugins must be added before the following line
@@ -46,6 +45,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+syntax on
 
 "Ignore case during vim search, '\C' to make sensitive
 "on stock vim use '\c' to make case ins
