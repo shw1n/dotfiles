@@ -1,6 +1,16 @@
 ##### Initialize Path #####
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+echo ${machine}
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/games
+#export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/games
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/shwin/.fzf/bin
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -27,14 +37,19 @@ export FZF_ALT_G_COMMAND="find . -type d 2>/dev/null"
 ##### Aliases #####
 
 alias balias="vim ~/.bash_aliases"
+alias blocal="vim ~/.bash_aliases.local"
 alias ksync="$HOME/Documents/scripts/sync_keepass.sh"
 alias evernote="wine $HOME/.wine/drive_c/'Program Files (x86)'/Evernote/Evernote/Evernote.exe &"
 
-alias pbcopy='xargs echo -n | xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+if [[ "$machine" != "Mac" ]]; then
+    echo "Not mac"
+	alias pbcopy='xargs echo -n | xclip -selection clipboard'
+	alias pbpaste='xclip -selection clipboard -o'
+fi
 
 alias ipython='ipython3'
 alias lock='gnome-screensaver-command --lock'
+
 
 alias ..='cd ..'
 alias ...='cd ../..'
