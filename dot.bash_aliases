@@ -7,7 +7,7 @@ case "${unameOut}" in
     MINGW*)     machine=MinGw;;
     *)          machine="UNKNOWN:${unameOut}"
 esac
-echo ${machine}
+#echo ${machine}
 
 #export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/games
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/shwin/.fzf/bin
@@ -74,18 +74,22 @@ xr() {
 
 
 
-# Start xbindkeys if it isn't running already
-if ! pgrep -x "xbindkeys" > /dev/null
-then
-    xbindkeys -f ~/.xbindkeysrc 
+if [[ "$machine" == "Linux" ]]; then
+    # Start xbindkeys if it isn't running already
+    if ! pgrep -x "xbindkeys" > /dev/null
+    then
+        xbindkeys -f ~/.xbindkeysrc 
+    fi
 fi
 
-if [[ -z "${TMUX}" ]]; then
+if [ -z "$TMUX" ]; then
     tmux
 fi
 
-redshift -O 3500
-#redshift -O 5000
+if [[ "$machine" == "Linux" ]]; then
+    redshift -O 3500
+    #redshift -O 5000
+fi
 
 # Source local non-version-controlled aliases if they exist
 if [ -f ~/.bash_aliases.local ]; then
